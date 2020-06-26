@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "sensor",
+      "value": "camera"
+    },
+    {
+      "name": "location",
+      "value": "backyard"
+    }
+  ],
+  "constraints": []
+}

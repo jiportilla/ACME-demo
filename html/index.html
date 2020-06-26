@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <!-- Load the mobile-net model. -->
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <!-- Load the coco-ssd model. -->
+    <script src="https://unpkg.com/@tensorflow-models/coco-ssd"></script>
+  </head>
+  <body>
+    <h1>TensorFlow.js Image Analysis Example</h1>
+    <button type="button" id="toggle" onclick="toggleImage('img','cat.jpg','dog.jpg')">Toggle Image</button>
+    </p>
+    <div id="console"></div>
+    <img id="img" crossorigin='anonymous' onclick="toggleImage('img','cat.jpg','dog.jpg')" src="dog.jpg"  />
+    <!-- Load index.js after the content of the page -->
+    <script src="index.js"></script>
+  </body>
+</html>
