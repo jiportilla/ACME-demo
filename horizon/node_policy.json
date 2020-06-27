@@ -1,13 +1,13 @@
 {
   "properties": [
     {
-      "name": "sensor",
-      "value": "camera"
+      "name": "type",
+      "value": "SecurityCam"
     },
     {
-      "name": "location",
-      "value": "backyard"
+      "name": "GPU-enabled",
+      "value": "false"
     }
   ],
-  "constraints": []
+  "constraints": ["purpose==security-monitoring"]
 }
