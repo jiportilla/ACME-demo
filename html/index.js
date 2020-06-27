@@ -15,7 +15,7 @@
  * =============================================================================
  */
  
-let net;
+//let net;
 
 function toggleImage(id,primary,secondary) {
 	console.log('Toggling image ...');
@@ -26,7 +26,7 @@ function toggleImage(id,primary,secondary) {
       document.getElementById(id).src=primary;
     }
     console.log('Analyzing new image ...');
-    app();
+    //app();
 }
 
 async function app() {
