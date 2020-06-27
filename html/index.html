@@ -1,21 +1,14 @@
 <html>
   <head>
-    <!-- Load the latest version of TensorFlow.js 
-    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
-    <!-- Load the mobile-net model. -->
-    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
-    <!-- Load the coco-ssd model. -->
-    <script src="https://unpkg.com/@tensorflow-models/coco-ssd"></script>
-    -->
   </head>
   <body>
-    <h1>TensorFlow.js Detection Example</h1>
-    <button type="button" id="detect" onclick="toggleImage('img','door-cpu.gif','door-GPU.gif')">Detect Image</button>
+    <h1>Camera A</h1> 
+    <h2>Detection Example</h2>
+    <button type="button" id="detect" onclick="toggleImage('img','door-none.gif','door-cpu.gif')">Analyze</button>
     </p>
     <div id="console"></div>
-    <img id="img" crossorigin='anonymous' onclick="toggleImage('img','door-cpu.gif','door-GPU.gif')" src="door-cpu.gif"  />
+    <img id="img" crossorigin='anonymous' onclick="toggleImage('img','door-none.gif','door-cpu.gif')" src="door-none.gif"  />
     <!-- Load index.js after the content of the page -->
     <script src="index.js"></script>
-    
   </body>
 </html>
