@@ -1,7 +1,11 @@
 {
   "properties": [
+    {
+      	"name": "purpose",
+      	"value": "security-monitoring"
+    }
   ],
   "constraints": [
-       "sensor == camera"
+	"openhorizon.memory >= 300"
   ]
 }
