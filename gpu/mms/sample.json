@@ -1,0 +1,32 @@
+{
+   "objectID":"",
+   "objectType":"",
+   "destinationOrgID":"$HZN_ORG_ID",
+   "destinationID":"",
+   "destinationType":"",
+   "destinationsList":null,
+   "destinationPolicy":{
+      "properties":[
+         {
+            "name":"",
+            "value":null,
+            "type":""
+         }
+      ],
+      "constraints":[
+         ""
+      ],
+      "services":[
+         {
+            "orgID":"",
+            "serviceName":"",
+            "arch":"",
+            "version":""
+         }
+      ]
+   },
+   "expiration":"",
+   "version":"",
+   "description":"",
+   "activationTime":""
+}

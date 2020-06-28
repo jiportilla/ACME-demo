@@ -1,0 +1,11 @@
+{
+  "objectID": "index.js",
+  "objectType": "js",
+  "destinationOrgID": "$HZN_ORG_ID",
+  "destinationID": "",
+  "destinationType": "pattern-image-tf-mms-amd64",
+  "expiration": "",
+  "version": "",
+  "description": "tensorflow cocoSSD model",
+  "activationTime": ""
+}

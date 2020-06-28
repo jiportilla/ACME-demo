@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "type",
+      "value": "SecurityCam"
+    },
+    {
+      "name": "GPU-enabled",
+      "value": "false"
+    }
+  ],
+  "constraints": ["purpose==security-monitoring"]
+}
