@@ -15,7 +15,7 @@ export ARCH ?= $(shell hzn architecture)
 DOCKER_IMAGE_BASE ?= iportilla/acme-demo
 SERVICE_NAME ?=acme-motion-detection-service
 SERVICE_VERSION ?=1.0.0
-PORT_NUM ?=9080
+PORT_NUM ?=8080
 DOCKER_NAME ?=acme-demo
 OBJECT_TYPE ?=model
 OBJECT_ID ?=index.html
@@ -35,7 +35,7 @@ build:
 	docker build -t $(DOCKER_IMAGE_BASE)_$(ARCH):$(SERVICE_VERSION) -f ./Dockerfile.$(ARCH) .
 
 run:
-	@echo "Open your browser and go to http://localhost:9080"
+	@echo "Open your browser and go to http://localhost:8080"
 	docker run -d -p=$(PORT_NUM):80 --name=$(DOCKER_NAME) $(DOCKER_IMAGE_BASE)_$(ARCH):$(SERVICE_VERSION)
 
   # Run and verify the service
@@ -91,7 +91,7 @@ delete-mms-object:
 
   # register node
 register-pattern:
-	hzn register -p pattern-image.demo-mms-amd64
+	hzn register -p pattern-acme-motion-detection-service-amd64
 
 register-policy:
 	hzn register --policy=horizon/node_policy.json

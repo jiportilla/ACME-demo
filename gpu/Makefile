@@ -91,7 +91,7 @@ delete-mms-object:
 
   # register node
 register-pattern:
-	hzn register -p pattern-image.demo-mms-amd64
+	hzn register -p pattern-acme-motion-detection-service-gpu-amd64 
 
 register-policy:
 	hzn register --policy=horizon/node_policy.json
