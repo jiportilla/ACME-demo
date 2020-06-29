@@ -5,7 +5,7 @@
   "destinationPolicy": {
     "properties": [],
     "constraints": [
-        "type  == SecurityCam"
+        "GPU-type  == TPU"
      ],
     "services": [
        {

@@ -6,6 +6,6 @@
     }
   ],
   "constraints": [
-	"openhorizon.memory >= 300"
+	"openhorizon.memory >= 1024"
   ]
 }
