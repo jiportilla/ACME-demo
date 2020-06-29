@@ -12,11 +12,11 @@ SYSTEM_ARCH := $(shell uname -m | sed -e 's/aarch64.*/arm64/' -e 's/x86_64.*/amd
 # Default ARCH to the architecture of this machines (as horizon/golang describes it)
 export ARCH ?= $(shell hzn architecture)
 
-DOCKER_IMAGE_BASE ?= iportilla/acme-demo
-SERVICE_NAME ?=acme-demo-detection-service
+DOCKER_IMAGE_BASE ?= iportilla/acme-demo-gpu
+SERVICE_NAME ?=acme-motion-detection-service-gpu
 SERVICE_VERSION ?=1.0.0
 PORT_NUM ?=9080
-DOCKER_NAME ?=acme-demo
+DOCKER_NAME ?=acme-demo-gpu
 OBJECT_TYPE ?=model
 OBJECT_ID ?=index.js
 BUSINESS_POLICY_NAME ?=$(SERVICE_NAME).bp 

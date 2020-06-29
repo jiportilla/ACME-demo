@@ -1,8 +1,8 @@
 {
     "HZN_ORG_ID": "ipcluster",
     "MetadataVars": {
-        "DOCKER_IMAGE_BASE": "iportilla/acme-demo",
-        "SERVICE_NAME": "acme-move-detection-service-cpu",
+        "DOCKER_IMAGE_BASE": "iportilla/acme-demo-gpu",
+        "SERVICE_NAME": "acme-motion-detection-service-gpu",
         "SERVICE_VERSION": "1.0.0"
     }
 }
