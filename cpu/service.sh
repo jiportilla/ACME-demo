@@ -10,7 +10,7 @@
 
 # The type and name of the MMS file we are using
 OBJECT_TYPE=model
-OBJECT_ID=index.js
+OBJECT_ID=index.html
 PATH_TO_MODEL=/var/www/localhost/htdocs
 
 # ${HZN_ESS_AUTH} is mounted to this container by the Horizon agent and is a json file with the credentials for authenticating to ESS.
@@ -27,7 +27,7 @@ BASEURL='https://localhost/api/v1/objects'
 
 # Save original config file that came from the docker image so we can revert back to it if the MMS file is deleted
 #cp $PATH_TO_MODEL/$OBJECT_ID $PATH_TO_MODEL/${OBJECT_ID}.original
-cp $PATH_TO_MODEL/index.js $PATH_TO_MODEL/index.js.original
+cp $PATH_TO_MODEL/index.html $PATH_TO_MODEL/index.html.original
 
 # Repeatedly check to see if an updated config.json was delivered via MMS/ESS, then use the value within it to echo hello
 while true; do
@@ -55,7 +55,7 @@ while true; do
 
             # Revert back to the original config file from the docker image
             #cp $PATH_TO_MODEL/${OBJECT_ID}.original $PATH_TO_MODEL/$OBJECT_ID
-	    #cp $PATH_TO_MODEL/index.js.original $PATH_TO_MODEL/index.js
+	    #cp $PATH_TO_MODEL/index.html.original $PATH_TO_MODEL/index.html
 
         else
             echo "*** DEBUG *** Received new/updated $OBJECT_ID from MMS"
@@ -67,7 +67,7 @@ while true; do
 
 	    # move the new model to htdocs
 	    echo "*** DEBUG *** PROCESS: moving new model to ...htdocs/ "
-	    cp $OBJECT_ID $PATH_TO_MODEL/index.js
+	    cp $OBJECT_ID $PATH_TO_MODEL/index.html
 
             # Acknowledge that we got the new file, so it won't keep telling us
             HTTP_CODE=$(curl -sSLw "%{http_code}" -X PUT ${AUTH} ${CERT} $SOCKET $BASEURL/$OBJECT_TYPE/$OBJECT_ID/received)

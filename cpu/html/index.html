@@ -1,15 +1,17 @@
 <html>
-  <head>
-  </head>
-  <body>
-    <h1>Camera A</h1> 
+   <head>
+      <title>ACME Motion Detection Demo</title>
+   </head>
+   <body style="background-color:#FFF8DC;">
+    <h1>Camera B</h1> 
     <h2>Detection Example</h2>
-    <button type="button" id="detect" onclick="toggleImage('img','door-none.gif','door-cpu.gif')">Analyze</button>
+    <button type="button" id="detect" onclick="toggleImage('img','door-none.gif','door-gpu.gif')">Analyze</button>
     </p>
     <div id="console"></div>
-    <img id="img" crossorigin='anonymous' onclick="toggleImage('img','door-none.gif','door-cpu.gif')" src="door-none.gif"  />
+    <img id="img" crossorigin='anonymous' onclick="toggleImage('img','door-none.gif','door-gpu.gif')" src="door-none.gif"  />
     <!-- Load index.js after the content of the page -->
     <script src="index.js"></script>
-    <br>Full example available <a href="https://medium.com/@ageitgey/build-a-hardware-based-face-recognition-system-for-150-with-the-nvidia-jetson-nano-and-python-a25cb8c891fd">here</a>
+    </p>
+    </br>Full example available <a href="https://medium.com/@ageitgey/build-a-hardware-based-face-recognition-system-for-150-with-the-nvidia-jetson-nano-and-python-a25cb8c891fd">here</a>
   </body>
 </html>

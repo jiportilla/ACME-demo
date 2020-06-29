@@ -13,12 +13,12 @@ SYSTEM_ARCH := $(shell uname -m | sed -e 's/aarch64.*/arm64/' -e 's/x86_64.*/amd
 export ARCH ?= $(shell hzn architecture)
 
 DOCKER_IMAGE_BASE ?= iportilla/acme-demo
-SERVICE_NAME ?=acme-demo-detection-service
+SERVICE_NAME ?=acme-motion-detection-service
 SERVICE_VERSION ?=1.0.0
 PORT_NUM ?=9080
 DOCKER_NAME ?=acme-demo
 OBJECT_TYPE ?=model
-OBJECT_ID ?=index.js
+OBJECT_ID ?=index.html
 BUSINESS_POLICY_NAME ?=$(SERVICE_NAME).bp 
 
 
@@ -73,7 +73,7 @@ build-all-arches:
 
   # target to publish new ML model file to mms
 publish-mms-object:
-	hzn mms object publish -m mms/object.json -f mms/index.js
+	hzn mms object publish -m mms/object.json -f mms/index.html
 
   # target to list mms object
 list-mms-object:

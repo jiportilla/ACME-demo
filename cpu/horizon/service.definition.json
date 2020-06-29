@@ -16,7 +16,7 @@
                 "image": "${DOCKER_IMAGE_BASE}_$ARCH:$SERVICE_VERSION",
 		"ports": [
                     {
-                        "HostPort": "9080:80/tcp",
+                        "HostPort": "8080:80/tcp",
                         "HostIP": "0.0.0.0"
                     }
                 ]
