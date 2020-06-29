@@ -1,5 +1,5 @@
 {
-  "objectID": "index.js",
+  "objectID": "index.html",
   "objectType": "model",
   "destinationOrgID": "$HZN_ORG_ID",
   "destinationPolicy": {
@@ -18,6 +18,6 @@
   }, 
   "expiration": "",
   "version": "1.0.0",
-  "description": "image demo with tensorflow models",
+  "description": "motion detection demo with tensorflow models",
   "activationTime": ""
 }
