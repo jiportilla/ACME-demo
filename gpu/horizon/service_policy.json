@@ -2,10 +2,10 @@
   "properties": [
     {
       	"name": "purpose",
-      	"value": "security-monitoring"
+      	"value": "smart-video-analytics"
     }
   ],
   "constraints": [
-	"openhorizon.memory >= 1024"
+	"GPU-enabled == true"
   ]
 }
