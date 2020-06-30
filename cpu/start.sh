@@ -7,7 +7,7 @@ set -m
 ./httpd.sh &
 
 # Start the helper process (ESS pull service)
-./service.sh
+#./service.sh
 
 # now we bring the primary process (http server) back into the foreground
 # and leave it there

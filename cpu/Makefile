@@ -71,24 +71,6 @@ build-all-arches:
 	ARCH=arm $(MAKE) build
 	ARCH=arm64 $(MAKE) build
 
-  # target to publish new ML model file to mms
-publish-mms-object:
-	hzn mms object publish -m mms/object.json -f mms/index.html
-
-  # target to list mms object
-list-mms-object:
-	hzn mms object list -t $(OBJECT_TYPE) -i $(OBJECT_ID) -d
-
-list-model:
-	hzn mms object list -t $(OBJECT_TYPE) -i $(OBJECT_ID) -d
-
-list-files:
-	sudo ls -Rla /var/horizon/ess-store/sync/local
-
-  # target to delete input.json file in mms
-delete-mms-object:
-	hzn mms object delete -t $(OBJECT_TYPE) --id $(OBJECT_ID) 
-
   # register node
 register-pattern:
 	hzn register -p pattern-acme-motion-detection-service-amd64
