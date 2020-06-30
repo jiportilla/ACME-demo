@@ -9,5 +9,5 @@
       "value": "true"
     }
   ],
-  "constraints": ["purpose==security-monitoring"]
+  "constraints": ["purpose==security-monitoring OR purpose == smart-video-analytics"]
 }
