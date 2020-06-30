@@ -2,11 +2,11 @@
   "properties": [
     {
       "name": "type",
-      "value": "SmartCam"
+      "value": "SecurityCam"
     },
     {
       "name": "GPU-enabled",
-      "value": "true"
+      "value": "false"
     }
   ],
   "constraints": ["purpose==security-monitoring"]
