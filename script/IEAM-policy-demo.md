@@ -12,7 +12,6 @@ Let's take a look at how our policy deployment feature autonomously controls wor
 
 ACME is a fictional nationwide security company that offers various video cameras. They want to add video analytics to some of those cameras to detect motion and measure social distance.
 
-* *Diagram goes here*
 ![ACME Demo](acme.png)
 
 Let's take a look at the IBM Edge Application Manager dashboard for ACME's cameras:
@@ -47,12 +46,13 @@ You can also view your edge nodes as a `list`.
 
 	[Management Hub](http://icp.com/edge)
 	
+	* diagram goes here
 
 The `list` view shows additional details that are not visible in a graph layout, like `node owner` and last `heartbeat`. If you select an individual node in the list view you can see even more details.
 
 * Go to the ACME `DEV` node
 
-	[Management Hub](http://icp.com/edge)
+	![IEAM Dev Node](edge-dev.png)
 
 Notice ACME `DEV's` current configuration of `properties` and `constraints`. 
 These `properties` and `constraints` comprise this node's `policy`, and enable this node to identify its capabilities and highlight its differences. When combined with other policies, it will also inform the type of workloads it will run.
