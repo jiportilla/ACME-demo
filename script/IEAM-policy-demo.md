@@ -13,7 +13,6 @@ Let's take a look at how our policy deployment feature autonomously controls wor
 ACME is a fictional nationwide security company that offers various video cameras. They want to add video analytics to some of those cameras to detect motion and measure social distance.
 
 * *Diagram goes here*
-* 
 ![ACME Demo](acme.png)
 
 Let's take a look at the IBM Edge Application Manager dashboard for ACME's cameras:
@@ -28,6 +27,7 @@ The `dashboard` resides in the your `Management Hub` which can be placed whereve
 
 The `dashboard` enables you to see and interact with all of your edge assets in one place, regardless of their physical locations or current connection status. These edge machines may be geographically distributed or concentrated in one location. The `Agents` on these edge machines are fully autonomous, are able to reach out to the Management Hub through firewalls when needed. They also tolerate unreliable and intermittent connectivity to the Management Hub.
 
+![IEAM Hub](edge-hub.png)
 
 Notice the dashboard has 4 tabs: `Nodes`, `Services`, `Patterns` and `Policies`. Let's take a look at the `Nodes` tab first:
 
