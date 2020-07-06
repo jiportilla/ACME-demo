@@ -1,5 +1,7 @@
 # IEAM Policy Tour Demo
-[box](https://ibm.ent.box.com/notes/666476284832?s=1q9a1d3xdx8unh65k6vm10n8lvg2slmg)
+[box note](https://ibm.ent.box.com/notes/666476284832?s=1q9a1d3xdx8unh65k6vm10n8lvg2slmg)
+
+[demo environment](https://cloudcontent.mybluemix.net/cloud/garage/dte/producttour/ibm-edge-application-manager-workload-management)
 
 ## 1. Introductions
 
@@ -81,7 +83,7 @@ Notice `CAM-A's` current configuration of `properties` and `constraints`. 
 These `properties` and `constraints` comprise this node's `policy`, and enable this node to identify its capabilities and highlight its differences. When combined with other policies, it will also inform the type of workloads it will run.
 
 
-Update the `properties` of `CAM-A `with with:
+Review or update the `properties` of `CAM-A` as:
 
 `type=SecurityCam` 
 
@@ -115,7 +117,7 @@ Now let's examine `CAM-B`
 
 	[Management Hub](http://icp.com/edge)
 	
-Update `CAM-B` properties with:
+Review or update `CAM-B` properties as:
 
 `type=SmartCam` 
 
@@ -125,7 +127,7 @@ and
 
 `CAM-B` has a video processing accelerator which means it will be able to run both security and video analytic workloads. 
 
-Update `CAM-B`with a constraint that it will accept software deployment policies that specify the properties: `purpose=security-monitoring` or  `purpose=smart-video-analytics`
+`CAM-B` also states a constraint that it will accept software deployment policies that specify the properties: `purpose=security-monitoring` or  `purpose=smart-video-analytics`
 
 
 Update `CAM-B` `constraints` With:
@@ -152,7 +154,7 @@ Now let's learn about edge `services`:
 	
 	* Diagram goes here
 	
-An `IEAM service` can contain one or more `Docker` container images. A group of  one or more services together can create an application.
+An edge `service` can contain one or more **Docker** container images. A group of  one or more services together can create an application.
 
 
 The `Services` tab lists all the available services that have been published into the `IEAM Exchange` (to make them available for deployment to your edge nodes).
@@ -205,8 +207,8 @@ Notice that there are currently no `deployment` polices for this service. Let's 
 
 
 * Click: `Create deployment policy`
-* Click in the `Enter a name` field (will autofill) 
-* Click in the `Create a description for your policy` field (will autofill)
+* Click in the `Enter a name` field 
+* Click in the `Create a description for your policy` field
 
 
 Now let's consider which nodes should run this workload.  This is done by adding `constraints` which must be valid on all devices that need to run this service. These `constraints` are logical expressions that that are evaluated against the `properties` in each node's `policies`.
@@ -234,7 +236,7 @@ Update `policy` values with:
 
 By specifying the `type` must be `SecurityCam`, this `deployment` policy will only be run on `CAM-A` that has this `type` property, but not on  `CAM-B` which has `type=SmartCam` property.
 
-Note that `properties` can have any names and values you wish that are appropriate for your circumstances. And similarly, `constraints` can refer to any `properties` you have set, and you can specify conditions for the values of those `properties` using the wide variety of operators provided.
+Note that properties can have any names and values you wish that are appropriate for your circumstances. And similarly, `constraints` can refer to any `properties` you have set, and you can specify conditions for the values of those `properties` using the wide variety of operators provided.
 
 * Click `Next` at top right
 
@@ -250,9 +252,9 @@ Let's review this `policy` and activate it using the `deploy service` button:
 
 ## 5. Agreement negotiations
 
-Once the service deployment is saved, then things will begin to happen autonomously in the background. Your autonomous Agreement Robots (AgBots) in the `Management Hub` will notice this policy and will begin negotiations with your autonomous `Agents` on each of your registered edge nodes to suggest that those `Agents` should consider running the associated service workload. 
+Once the `service deployment` is saved, then things will begin to happen autonomously in the background. Your autonomous Agreement Robots (**AgBots**) in the **Management Hub** will notice this policy and will begin negotiations with your autonomous **Agents** on each of your registered edge nodes to suggest that those **Agents**  should consider running the associated service workload. 
 
-Each `Agent` will then evaluate the `AgBot`'s proposal based on its local `policy` and will decide whether or not it is appropriate to accept the `agreement` and begin validating the workload, and eventually, if appropriate, to run the workload.
+Each **Agent**  will then evaluate the **AgBot's** proposal based on its local `policy` and will decide whether or not it is appropriate to accept the `agreement` and begin validating the workload, and eventually, if appropriate, to run the workload.
 
 Now move back to the `Nodes` tab to watch this service being deployed. 
 
@@ -264,11 +266,11 @@ Now move back to the `Nodes` tab to watch this service being deployed.
 * Click on `CAM-B`, look at services
 
 * Diagram/video goes here
-*
+
 ## 6. GPU Deployment Policy
 
 
-Let's return to the `Services` tab in the browser and deploy another `service`.
+Let's return to the `Services` tab in the browser and review another `service`.
 
 Search for the `acme-motion-detection-service-gpu` service.
 
@@ -279,6 +281,8 @@ Search for the `acme-motion-detection-service-gpu` service.
 * Select the `acme-motion-detection-service-gpu` tile
 
 Note the `service` properties section for this newly published service.
+
+* diagram goes here
 
 * Click at the bottom of the screen to jump down to the `Deployment` section
 
@@ -324,7 +328,7 @@ Notice that tt is not deployed to `CAM-A` because this service requires the `GPU
 
 ## 7. CAM-A Upgrade
 
-The `CAM-A` edge machine is now going to be updated with a video accelerator (GPU), and we will then change its node `properties` to change `GPU-enabled` to `true` and to change the node's `constraints` to support both `purpose` values `security-monitoring` or `smart-video-analytics` workloads.
+The `CAM-A` edge machine is now going to be updated with a video accelerator (GPU), and we will then change its node `properties` to change `GPU-enabled` to `true` and to change the node's `constraints` to support either `purpose` values `security-monitoring` or `smart-video-analytics` workloads.
 
 Update `CAM-A` property value:
 
@@ -371,15 +375,32 @@ Notice that `CAM-B` is still running this one service workload.
 * update cam-b properties (GPU-type=TPU)
 * Show model updates
 
+1. Publish `config.json` as a new object in the cloud MMS:
+
+  ```bash
+  hzn mms object publish -m object.json -f config.json
+  ```
+
+2. View the published mms object:
+
+  ```bash
+  hzn mms object list -t $HZN_DEVICE_ID.hello-mms -i config.json -d
+  ```
+ 
+   Once the `Object status` changes to `delivered` you will see the output of the hello-mms service (in the other terminal) change from **\<your-node-id\> says: Hello from the dockerfile!** to **\<your-node-id\> says: Hello from the MMS!**
+
+22. After approximately 15 seconds you should see the output of the service change to the value of `HW_WHO` set in the `config.json` file.
+23. 
+
 ## 9. Summary
-Today you have seen the `IBM Edge Application Manager` in action, performing autonomous application lifecycle management on a few example edge machines with hardware and software differences. You have watched our fully autonomous `Agents` work behind the scenes to autonomously manage workload installation and update for devices with differing capabilities in a retail environment. You have also heard that `IEAM` supports very large deployments of many thousands of edge machines.
+Today you have seen the `IBM Edge Application Manager` in action, performing autonomous application lifecycle management on a few example edge machines with hardware and software differences. You have watched our fully autonomous **Agents** work behind the scenes to autonomously manage workload installation and update for devices with differing capabilities in a retail environment. You have also heard that `IEAM` supports very large deployments of many thousands of edge machines.
 
 
-You have seen that once you have deployed and configured our `Agent` on your machines, you will be able to use `IBM Edge Application Manager` to update policies to change what software runs on which edge machines. You will do this without ever again having to directly connect to any of those machines. Instead you will simply express your intent through our policy mechanism. The `IEAM` system will then work in the background to bring your entire fleet of node into compliance with your policies. This will save your operations team time and money. It will reduce risks from human error, and reduce the complexity of managing your entire fleet of edge machines.
+You have seen that once you have deployed and configured our **Agent** on your machines, you will be able to use `IBM Edge Application Manager` to update policies to change what software runs on which edge machines. You will do this without ever again having to directly connect to any of those machines. Instead you will simply express your intent through our policy mechanism. The `IEAM` system will then work in the background to bring your entire fleet of node into compliance with your policies. This will save your operations team time and money. It will reduce risks from human error, and reduce the complexity of managing your entire fleet of edge machines.
 
 
 Where would you like too go with this next? How can the `IBM Edge Application Management` team help you to modernize your edge fleet management? 
 
-Would you be interested in a technical deep dive to better understand the behaviors of these autonomous `Agents` and Agreement Bots `(AgBots)`? 
+Would you be interested in a technical deep dive to better understand the behaviors of these autonomous **Agent**  and Agreement Bots (**AgBots**)? 
 
 Would you like to discuss deployment scenarios and pricing? 
