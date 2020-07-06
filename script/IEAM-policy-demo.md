@@ -396,7 +396,7 @@ Notice that **CAM-B** is still running this one service workload.
 
 
 ## 9. Summary
-![IEAM Policies](edge-policy.svg)
+![IEAM Policies](edge-summary.svg)
 
 Today you have seen the **IBM Edge Application Manager** in action, performing autonomous application lifecycle management on a few example edge machines with hardware and software differences. You have watched our fully autonomous **Agents** work behind the scenes to autonomously manage workload installation and update for devices with differing capabilities in a retail environment. You have also heard that **IEAM** supports very large deployments of many thousands of edge machines.
 
