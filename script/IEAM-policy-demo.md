@@ -75,7 +75,7 @@ Next, let's explore **CAM-A** settings:
 
 ## 2.1 CAM-A Details
 
-* Go to the `CAM-A` node
+* Go to the **CAM-A** node
 
 	[Management Hub](http://icp.com/edge)
 
@@ -95,9 +95,9 @@ The latter is used here to indicate that this camera does not contain a video pr
 
 **CAM-Av also states a **constraint** that it will only accept software deployment policies that specify the  `purpose` property with a `security-monitoring` value.
 
-Update `CAM-A` constraints with:
+Update **CAM-A** constraints with:
 
-```
+```...
 	"constraints": [
     	"purpose == security-monitoring"
   	]
@@ -333,10 +333,10 @@ The **CAM-A** edge machine is now going to be updated with a video accelerator (
 Update **CAM-A** property value:
 
 ```
-	{
-      "name": "GPU-enabled",
-      "value": "true"
-    }
+   {
+     "name": "GPU-enabled",
+     "value": "true"
+   }
 ```
 
 And
@@ -389,10 +389,15 @@ Notice that **CAM-B** is still running this one service workload.
  
    Once the `Object status` changes to `delivered` you will see the output of the hello-mms service (in the other terminal) change from **\<your-node-id\> says: Hello from the dockerfile!** to **\<your-node-id\> says: Hello from the MMS!**
 
-22. After approximately 15 seconds you should see the output of the service change to the value of `HW_WHO` set in the `config.json` file.
-23. 
+3. After approximately 15 seconds you should see the output of the service change to the value of `HW_WHO` set in the `config.json` file.
+
+4. steps
+
+
 
 ## 9. Summary
+![IEAM Policies](edge-policy.svg)
+
 Today you have seen the **IBM Edge Application Manager** in action, performing autonomous application lifecycle management on a few example edge machines with hardware and software differences. You have watched our fully autonomous **Agents** work behind the scenes to autonomously manage workload installation and update for devices with differing capabilities in a retail environment. You have also heard that **IEAM** supports very large deployments of many thousands of edge machines.
 
 
