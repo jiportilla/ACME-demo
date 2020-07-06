@@ -14,7 +14,7 @@ ACME is a fictional nationwide security company that offers various video camera
 
 * *Diagram goes here*
 * 
-![ACME Demo](hub.png)
+![ACME Demo](acme.png)
 
 Let's take a look at the IBM Edge Application Manager dashboard for ACME's cameras:
 
