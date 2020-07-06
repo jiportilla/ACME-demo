@@ -57,6 +57,8 @@ The `list` view shows additional details that are not visible in a graph layout,
 Notice ACME `DEV's` current configuration of `properties` and `constraints`. 
 These `properties` and `constraints` comprise this node's `policy`, and enable this node to identify its capabilities and highlight its differences. When combined with other policies, it will also inform the type of workloads it will run.
 
+Notice no edge services are running on the Dev node.
+
 * Optional
 
 	Register `CAM-A` and `CAM-B` nodes using the `CLI` command:
@@ -65,9 +67,12 @@ These `properties` and `constraints` comprise this node's `policy`, and enable t
 
 	on each of the two CAM nodes VMs
 	
+	* video goes here
+	
 Next, let's explore `CAM-A` settings:
 
-##CAM-A Details
+## 2.1 CAM-A Details
+
 * Go to the `CAM-A` node
 
 	[Management Hub](http://icp.com/edge)
@@ -98,9 +103,11 @@ Update `CAM-A` constraints with:
 
 * Note also that currently there are no services running on this node.
 
+* video goes here
+
 Now let's examine `CAM-B`
 
-##CAM-B Details
+## 2.2 CAM-B Details
 
 `(Describe the steps as you move to CAM-B)`
 
@@ -129,11 +136,13 @@ Update `CAM-B` `constraints` With:
     ]
 ```
 
+* video goes here
+
 * Like `CAM-A`, note that currently there are no services running on this `CAM-B` node.
 	
 # 3. Service & Deployment Policies
 
-Now let's learn about `services`: 
+Now let's learn about edge `services`: 
 
 `(Describe the steps to get to the Services tab)`
 
@@ -141,7 +150,7 @@ Now let's learn about `services`:
 
 	[Management Hub](http://icp.com/edge)
 	
-	
+	* Diagram goes here
 	
 An `IEAM service` can contain one or more `Docker` container images. A group of  one or more services together can create an application.
 
@@ -161,6 +170,7 @@ Let's use the search bar.
 * Select `acme-motion-detection-service` in the popup menu 
 * Select the `acme-motion-detection-service` tile
 
+* Diagram goes here
 
 Notice `acme-motion-detection-service` current configuration of `properties` and `constraints`. 
 These properties and constraints comprise this service's `policy`, and enable this service to identify its purpose and any specialized requirements it may have. When combined with other policies, it will help to determine on which edge nodes this service will run.
@@ -236,6 +246,7 @@ Let's review this `policy` and activate it using the `deploy service` button:
 
 * Click `Deploy service` at top right
 
+* Diagram/video goes here
 
 ## 5. Agreement negotiations
 
@@ -252,7 +263,8 @@ Now move back to the `Nodes` tab to watch this service being deployed.
 * Click on `CAM-A`, look at services
 * Click on `CAM-B`, look at services
 
-
+* Diagram/video goes here
+*
 ## 6. GPU Deployment Policy
 
 
@@ -308,6 +320,7 @@ Notice that tt is not deployed to `CAM-A` because this service requires the `GPU
 
 * Click on `CAM-A`, look at services
 
+* Diagram/video goes here
 
 ## 7. CAM-A Upgrade
 
