@@ -89,3 +89,8 @@ stop:
 # Clean the container
 clean:
 	-docker rm -f $(DOCKER_NAME) 2> /dev/null || :
+
+#watch agreement list
+watch:
+	watch hzn agreement list
+#
