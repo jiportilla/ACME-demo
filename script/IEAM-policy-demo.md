@@ -325,6 +325,7 @@ Notice that tt is not deployed to **CAM-A** because this service requires the `G
 * Click on **CAM-A**, look at services
 
 * Diagram/video goes here
+![CAM-B GPU](cam-b-gpu.png)
 
 ## 7. CAM-A Upgrade
 
@@ -363,10 +364,14 @@ Let's go back to the `Nodes` tab to observe **CAM-A**
 
 Notice that **CAM-A** is now running both service workloads.
 
+![CAM-A GPU](cam-a-upgrade.png)
+
 
 * Again click the `Nodes` tab, select **CAM-B**
 
 Notice that **CAM-B** is still running this one service workload.
+
+![CAM-B GPU](cam-b-gpu.png)
 
 ## 8. CAM-B Upgrade
 
