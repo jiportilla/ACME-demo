@@ -85,7 +85,7 @@ These **properties** and **constraints** comprise this node's **policy**, and en
 
 Review (or update( the **properties** of **CAM-A** as:
 
-`type=SecurityCam` 
+`type=Security-Cam` 
 
 and 
 
@@ -119,7 +119,7 @@ Now let's examine **CAM-B**
 	
 Review (or update) **CAM-B** properties as:
 
-`type=SmartCam` 
+`type=Smart-Cam` 
 
 and 
 
@@ -213,7 +213,7 @@ Notice that there are currently no **deployment** polices for this service. Let'
 
 Now let's consider which nodes should run this workload.  This is done by adding **constraints** which must be valid on all devices that need to run this service. These **constraints** are logical expressions that that are evaluated against the **properties** in each node's **policies**.
 
-Create a **constraint** that states the node's `type` property must be equal to `SecurityCam` in order for this service to be run on the node.
+Create a **constraint** that states the node's `type` property must be equal to `Security-Cam` in order for this service to be run on the node.
 
 `(Describe the steps)`
 
@@ -222,7 +222,7 @@ Update **policy** values with:
 ```
 	{
      	"constraints": [
-    		"type == SecurityCam"
+    		"type == Security-Cam"
   		] 
     }
 ```
@@ -231,10 +231,10 @@ Update **policy** values with:
 * Normally click `Add constraints` at top left, but here, click `Next` at top right
 * Click `Enter Property Name`, select `type`
 * Click `Select an Operator`, select `is equal to`
-* Click `Enter Property Value`, select `SecurityCam`
+* Click `Enter Property Value`, select `Security-Cam`
 
 
-By specifying the `type` must be `SecurityCam`, this **deployment** policy will only be run on **CAM-A** that has this `type` property, but not on  **CAM-B** which has `type=SmartCam` property.
+By specifying the `type` must be `Security-Cam`, this **deployment** policy will only be run on **CAM-A** that has this `type` property, but not on  **CAM-B** which has `type=Smart-Cam` property.
 
 Note that properties can have any names and values you wish that are appropriate for your circumstances. And similarly, **constraints** can refer to any **properties** you have set, and you can specify conditions for the values of those **properties** using the wide variety of operators provided.
 
@@ -318,14 +318,15 @@ Now move back to the `Nodes` tab to watch this `service` being deployed.
 
 * Click `Next` at top right
 * Click on **CAM-B**, look at services
+![CAM-B GPU](cam-b-gpu.png)
 
 
-Notice that tt is not deployed to **CAM-A** because this service requires the `GPU-enabled` property to be `true`.
+Notice that it is not deployed to **CAM-A** because this service requires the `GPU-enabled` property to be `true`.
 
 * Click on **CAM-A**, look at services
 
 * Diagram/video goes here
-![CAM-B GPU](cam-b-gpu.png)
+
 
 ## 7. CAM-A Upgrade
 
