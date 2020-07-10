@@ -265,7 +265,7 @@ Now move back to the `Nodes` tab to watch this service being deployed.
 * Click on **CAM-A**, look at services
 * Click on **CAM-B**, look at services
 
-* Diagram/video goes here
+![CAM-A](policyA.png)
 
 ## 6. GPU Deployment Policy
 
@@ -325,7 +325,7 @@ Notice that it is not deployed to **CAM-A** because this service requires the `G
 
 * Click on **CAM-A**, look at services
 
-* Diagram/video goes here
+![CAM-B](policyB.png)
 
 
 ## 7. CAM-A Upgrade
@@ -399,7 +399,7 @@ Notice that **CAM-B** is still running this one service workload.
 
 4. steps
 
-
+![MMS-policy](mmsPolicy.png)
 
 ## 9. Summary
 ![IEAM Policies](edge-summary.svg)
