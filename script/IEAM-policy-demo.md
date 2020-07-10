@@ -409,6 +409,7 @@ Notice that **CAM-B** is still running this one service workload.
 
 Today you have seen the **IBM Edge Application Manager** in action, performing autonomous application lifecycle management on a few example edge machines with hardware and software differences. You have watched our fully autonomous **Agents** work behind the scenes to autonomously manage workload installation and update for devices with differing capabilities in a retail environment. You have also heard that **IEAM** supports very large deployments of many thousands of edge machines.
 
+![Roles](roles.png)
 
 You have seen that once you have deployed and configured our **Agent** on your machines, you will be able to use **IBM Edge Application Manager** to update policies to change what software runs on which edge machines. You will do this without ever again having to directly connect to any of those machines. Instead you will simply express your intent through our policy mechanism. The **IEAM** system will then work in the background to bring your entire fleet of node into compliance with your policies. This will save your operations team time and money. It will reduce risks from human error, and reduce the complexity of managing your entire fleet of edge machines.
 
