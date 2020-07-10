@@ -317,15 +317,18 @@ Now move back to the `Nodes` tab to watch this `service` being deployed.
 
 
 * Click `Next` at top right
-* Click on **CAM-B**, look at services
+
 ![CAM-B GPU](cam-b-gpu.png)
 
+* Click on **CAM-B**, look at services
+
+![CAM-B](policyB.png)
 
 Notice that it is not deployed to **CAM-A** because this service requires the `GPU-enabled` property to be `true`.
 
 * Click on **CAM-A**, look at services
 
-![CAM-B](policyB.png)
+
 
 
 ## 7. CAM-A Upgrade
@@ -370,9 +373,9 @@ Notice that **CAM-A** is now running both service workloads.
 
 * Again click the `Nodes` tab, select **CAM-B**
 
-Notice that **CAM-B** is still running this one service workload.
-
 ![CAM-B GPU](cam-b-gpu.png)
+
+Notice that **CAM-B** is still running this one service workload.
 
 ## 8. CAM-B Upgrade
 
