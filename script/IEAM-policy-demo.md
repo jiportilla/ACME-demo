@@ -393,12 +393,11 @@ Notice that **CAM-B** is still running this one service workload.
   ```bash
   hzn mms object list -t $HZN_DEVICE_ID.hello-mms -i config.json -d
   ```
+  
+  ![CAM-B GPU](gpu-upgrade.png)
  
-   Once the `Object status` changes to `delivered` you will see the output of the hello-mms service (in the other terminal) change from **\<your-node-id\> says: Hello from the dockerfile!** to **\<your-node-id\> says: Hello from the MMS!**
+   Once the `Object status` changes to `delivered` you will see the output of the `acme-motion-detection-gpu` service. After approximately 30 seconds you should see the output of the service change to show `GPU-TPU` analysis.
 
-3. After approximately 15 seconds you should see the output of the service change to the value of `HW_WHO` set in the `config.json` file.
-
-4. steps
 
 ![MMS-policy](mmsPolicy.png)
 
