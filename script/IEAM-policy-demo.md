@@ -3,6 +3,15 @@
 
 [demo environment](https://cloudcontent.mybluemix.net/cloud/garage/dte/producttour/ibm-edge-application-manager-workload-management)
 
+
+<dl>
+  <dt>Videos</dt>
+  <dd>IBM Edge Computing demo.</dd>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=uzFDE3ZDGV4
+" target="_blank"><img src="http://img.youtube.com/vi/mUHm4PvIv14/0.jpg" 
+alt="IBM Edge Computing demo" width="240" height="180" border="10" /></a>
+</dl>
+
 ## 1. Introductions
 
 Hello, I am ____`<your-name>`____ wtih the **IBM Edge Application Manager** (IEAM) team.
