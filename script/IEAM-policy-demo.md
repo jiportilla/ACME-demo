@@ -391,7 +391,7 @@ Notice that **CAM-B** is still running this one service workload.
 2. View the published mms object:
 
   ```bash
-  hzn mms object list -t $HZN_DEVICE_ID.hello-mms -i config.json -d
+  hzn mms object list -t config.json -i index.html -d
   ```
   
   ![CAM-B GPU](gpu-upgrade.png)
