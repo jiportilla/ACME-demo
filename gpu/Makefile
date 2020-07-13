@@ -107,3 +107,11 @@ stop:
 # Clean the container
 clean:
 	-docker rm -f $(DOCKER_NAME) 2> /dev/null || :
+
+# watch agreement list
+watch:
+	watch hzn agreement list
+
+# watch model upload
+watch-mms:
+	watch hzn mms object list -t $(OBJECT_TYPE) -i $(OBJECT_ID) -d

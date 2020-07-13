@@ -333,6 +333,8 @@ Notice that it is not deployed to **CAM-A** because this service requires the `G
 
 ## 7. CAM-A Upgrade
 
+![CAM-A GPU](cam-a-upgrade.png)
+
 The **CAM-A** edge machine is now going to be updated with a video accelerator (GPU), and we will then change its node **properties** to change `GPU-enabled` to `true` and to change the node's **constraints** to support either `purpose` values `security-monitoring` or `smart-video-analytics` workloads.
 
 Update **CAM-A** property value:
@@ -368,7 +370,7 @@ Let's go back to the `Nodes` tab to observe **CAM-A**
 
 Notice that **CAM-A** is now running both service workloads.
 
-![CAM-A GPU](cam-a-upgrade.png)
+![IEAM Dev Node](cam-a-upgrade-policies.png)
 
 
 * Again click the `Nodes` tab, select **CAM-B**
