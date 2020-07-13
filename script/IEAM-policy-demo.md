@@ -56,8 +56,6 @@ You can also view your edge nodes as a **list**.
 * Go to the `List` view:
 
 	[Management Hub](http://icp.com/edge)
-	
-	* diagram goes here
 
 The **list** view shows additional details that are not visible in a graph layout, like **node owner** and last **heartbeat**. If you select an individual node in the list view you can see even more details.
 
@@ -77,8 +75,6 @@ Notice no edge services are running on the Dev node.
 	`hzn register` 
 
 	on each of the two CAM nodes VMs
-	
-	* video goes here
 	
 Next, let's explore **CAM-A** settings:
 
@@ -114,7 +110,6 @@ Update **CAM-A** constraints with:
 
 * Note also that currently there are no services running on this node.
 
-* video goes here
 
 Now let's examine **CAM-B**
 
@@ -147,8 +142,6 @@ Update **CAM-B** constraints with:
     ]
 ```
 
-* video goes here
-
 * Like **CAM-A**, note that currently there are no services running on this **CAM-B** node.
 	
 # 3. Service & Deployment Policies
@@ -160,8 +153,6 @@ Now let's learn about edge **services**:
 * Go to the `Services` tab `(via Node or Home links)`
 
 	[Management Hub](http://icp.com/edge)
-	
-	* Diagram goes here
 	
 An edge **service** can contain one or more **Docker** container images. A group of  one or more services together can create an application.
 
@@ -181,7 +172,6 @@ Let's use the search bar.
 * Select `acme-motion-detection-service` in the popup menu 
 * Select the `acme-motion-detection-service` tile
 
-* Diagram goes here
 
 Notice `acme-motion-detection-service` current configuration of **properties** and **constraints**. 
 These properties and constraints comprise this service's **policy**, and enable this service to identify its purpose and any specialized requirements it may have. When combined with other policies, it will help to determine on which edge nodes this service will run.
@@ -257,7 +247,6 @@ Let's review this `policy` and activate it using the `deploy service` button:
 
 * Click `Deploy service` at top right
 
-* Diagram/video goes here
 
 ## 5. Agreement negotiations
 
@@ -290,8 +279,6 @@ Search for the `acme-motion-detection-service-gpu` service.
 * Select the `acme-motion-detection-service-gpu` tile
 
 Note the **service** properties section for this newly published service.
-
-* diagram goes here
 
 * Click at the bottom of the screen to jump down to the `Deployment` section
 
