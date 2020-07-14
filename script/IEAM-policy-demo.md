@@ -21,7 +21,7 @@ IEAM provides highly secure and robust application lifecycle management for lite
 
 Let's take a look at how our policy deployment feature autonomously controls workload installation and update for devices with differing capabilities in a retail environment. 
 
-ACME is a fictional nationwide security company that offers various video cameras. They want to add video analytics to some of those cameras to detect motion and measure social distance.
+ACME is a fictional nationwide security company that offers various video cameras. They want to add video analytics to some of those cameras to detect motion and measure social distance. See diagram below:
 
 ![ACME Demo](acme.png)
 
