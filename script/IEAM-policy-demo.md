@@ -7,7 +7,7 @@
 <dl>
   <dt>Videos</dt>
   <dd>IBM Edge Computing demo.</dd>
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=uzFDE3ZDGV4
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=mUHm4PvIv14
 " target="_blank"><img src="http://img.youtube.com/vi/mUHm4PvIv14/0.jpg" 
 alt="IBM Edge Computing demo" width="240" height="180" border="10" /></a>
 </dl>
