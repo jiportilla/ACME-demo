@@ -1,5 +1,5 @@
 {
-    "HZN_ORG_ID": "ipcluster",
+    "HZN_ORG_ID": "mycluster",
     "MetadataVars": {
         "DOCKER_IMAGE_BASE": "iportilla/acme-move",
         "SERVICE_NAME": "acme-move-detection-service",
