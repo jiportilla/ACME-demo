@@ -14,7 +14,7 @@ export TIME_OUT:=60
 # variables
 DOCKER_NAME ?=acme-empty
 DOCKER_IMAGE_BASE ?= iportilla/$(DOCKER_NAME)
-SERVICE_NAME ?=acme-empty-gpu-detection-service
+SERVICE_NAME ?=acme-empty-detection-service
 SERVICE_VERSION ?=1.0.0
 BUSINESS_POLICY_NAME ?=$(SERVICE_NAME).bp 
 
