@@ -1,7 +1,11 @@
 {
   "properties": [
+   {
+     "name": "purpose",
+     "value": "check-stock"
+   }
   ],
   "constraints": [
-    "openhorizon.memory >= 100"
+    "openhorizon.memory >= 500"
   ]
 }

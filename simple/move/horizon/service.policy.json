@@ -1,7 +1,11 @@
 {
-  "properties": [
+  "properties":[ 
+    {
+     "name": "purpose",
+     "value": "security-monitoring"
+    } 
   ],
   "constraints": [
-    "openhorizon.memory >= 100"
+    "openhorizon.memory >= 200"
   ]
 }
