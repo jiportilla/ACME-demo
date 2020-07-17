@@ -16,16 +16,22 @@ alt="IBM Edge Computing demo" width="240" height="180" border="10" /></a>
 
 Hello, I am ____`<your-name>`____ wtih the **IBM Edge Application Manager** (IEAM) team.
 
-IEAM provides highly secure and robust application lifecycle management for literally thousands of edge machines regardless of their hardware and software differences. Our fully autonomous Agents transparently work through firewalls, and continue to function effectively even when network connectivity is intermittent.
+We're going to take you through a demo of IBM Edge Application Manager. 
+
+IEAM provides a highly secure and robust application life-cycle management for literally thousands of edge machines regardless of their hardware and software differences. Our fully autonomous Agents transparently work through firewalls, and allows for continuous operation even when the local network is disrupted, making application deployment both time and cost efficient.
 
 
-Let's take a look at how our policy deployment feature autonomously controls workload installation and update for devices with differing capabilities in a retail environment. 
+Let's take a look at how our **policy deployment** feature autonomously controls workload installation and update for devices with differing capabilities in a retail environment. 
 
-ACME is a fictional nationwide security company that offers various video cameras. They want to add video analytics to some of those cameras to detect motion and measure social distance. See diagram below:
+We're going to use ACME Grocery -- a fictional nationwide grocery chain. Each store has a variety of cameras arrayed in various positions throughout their stores, and they want to use them to monitor for security issues as well as for potential inventory outages.  
+
+See diagram below:
 
 ![ACME Demo](acme.png)
 
-Let's take a look at the IBM Edge Application Manager dashboard for ACME's cameras:
+We're going to demonstrate this scenario using a live IEAM management hub.
+
+Let's take a look at the IBM Edge Application Manager (**IEAM**) dashboard for ACME's cameras:
 
 * Go to the IEAM dashboard mock-up
 
