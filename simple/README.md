@@ -121,7 +121,7 @@ Now let's learn about edge **services**:
 
 * Go to the `Services` tab `(via Node or Home links)`
 
-	[Management Hub](http://icp.com/edge)
+	[IEAM Welcome Page](https://icp-console.ieam41-w3-8e873dd4c685acf6fd2f13f4cdfb05bb-0000.us-south.containers.appdomain.cloud/edge/start)
 	
 An IEAM edge **service** can contain one or more **Docker** container images. A group of  one or more **services** together can create an **application**.
 
@@ -164,7 +164,7 @@ Notice that there are currently no **deployment** polices for this service. Let'
 
 
 * Click: `Create deployment policy`
-* Click in the `Enter a name` field and give it a name of: **acme-move-demo**
+* Click in the `Enter a name` field and give it a name of: **acme-detect-movement-demo**
 * Click in the `Create a description for your policy` field and write **Look for unexpected movement**
 * Click: `Next`
 
