@@ -46,7 +46,7 @@ The **dashboard** resides in the your **Management Hub** which can be placed whe
 
 The **dashboard** enables you to see and interact with all of your edge assets in one place, regardless of their physical locations or current connection status. These edge machines may be geographically distributed or concentrated in one location. The **Agents** on these edge machines are fully autonomous, are able to reach out to the Management Hub through firewalls when needed. They also tolerate unreliable and intermittent connectivity to the Management Hub.
 
-![IEAM Hub](docs/s-hub.png)
+![IEAM Hub](docs/s-IEAM.png)
 
 Notice the dashboard has 4 tabs: **Nodes**, **Services**, **Patterns** and **Policies**. 
 
