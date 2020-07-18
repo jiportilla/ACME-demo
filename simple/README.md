@@ -154,7 +154,7 @@ The `acme-move-detection-service` also states a **constraint** that it requires 
 
 Now let's look at deploying this software onto some edge nodes. 
 
-## 4. Deployment policy details
+## 4. Deployment policy : CAM-A
 
 * Click at the bottom of the screen to jump down to the `Deployment` section
 
@@ -234,7 +234,7 @@ Now move back to the `Nodes` tab to watch this service being deployed.
 
 ![CAM-A](docs/s-cam-a-move.png)
 
-## 6. More Deployment Policy examples
+## 6. Deployment policy : CAM-B
 
 
 Let's return to the `Services` tab in the browser and review another **service**.
@@ -326,7 +326,7 @@ See how the service is automatically deployed to camera-B.
 
 Now, let's consider the case where **CAM-A**has been updated with a video accelerator (**GPU**). We need to reflect on that change in the node **policies**. That may occur automatically at the camera. Or we can make that change manually through the IEAM admin console. 
 
-We'll update its node **properties** to change `GPU-enabled` to `true`.  And with that, we can now classify this camera as a `type=SmartCam`.
+We'll update its node **properties** to change `GPU-enabled` to `true`.  And with that, we can now classify this camera as a `type=Smart-Cam`.
 
 
 * Click the Node *Properties* edit pencil icon
