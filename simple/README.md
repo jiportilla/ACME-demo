@@ -31,7 +31,7 @@ We're going to use ACME Grocery -- a fictional nationwide grocery chain. Each st
 
 See diagram below:
 
-![ACME Demo](docs/s-hub.png)
+![ACME Demo](docs/s-acme.png)
 
 We're going to demonstrate this scenario using a live IEAM management hub.
 
