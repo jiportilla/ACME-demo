@@ -372,7 +372,7 @@ Let's go back to the `Nodes` tab to observe **CAM-A**
 
 Notice that **CAM-A** is now running both service workloads.
 
-![IEAM Dev Node](docs/s-cam-a-services-upgrade.png)
+![IEAM Dev Node](docs/s-cam-a-upgradeV2.png)
 
 
 * Again click the `Nodes` tab, select **CAM-B**
