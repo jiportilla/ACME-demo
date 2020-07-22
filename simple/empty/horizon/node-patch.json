@@ -1,0 +1,7 @@
+{
+    "heartbeatIntervals": {
+      "minInterval": 10,
+      "maxInterval": 10,
+      "intervalAdjustment": 0
+    }
+}
