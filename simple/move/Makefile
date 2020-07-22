@@ -107,6 +107,11 @@ register-policy:
 unregister:
 	hzn unregister -Df
 	
+# update nodes
+update:
+	hzn exchange node update --json-file horizon/node-patch.json "mycluster/CAM-A.demo.acme.com"
+	hzn exchange node update --json-file horizon/node-patch.json "mycluster/CAM-B.demo.acme.com"
+
   # Stop and remove a running container
 stop:
 	docker stop $(DOCKER_NAME); docker rm $(DOCKER_NAME)
