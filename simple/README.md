@@ -9,8 +9,8 @@
 <dl>
   <dt>Demo video</dt>
   <dd>IBM Edge Computing demo.</dd>
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=bmxV5w8DJ8c
-" target="_blank"><img src="http://img.youtube.com/vi/bmxV5w8DJ8c/0.jpg" 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=Sjmi6wqlIc0
+" target="_blank"><img src="http://img.youtube.com/vi/Sjmi6wqlIc0/0.jpg" 
 alt="IBM Edge Computing demo" width="240" height="180" border="10" /></a>
 </dl>
 
@@ -20,14 +20,14 @@ alt="IBM Edge Computing demo" width="240" height="180" border="10" /></a>
 
 Hello, I am ____`<your-name>`____ wtih the **IBM Edge Application Manager** (IEAM) team.
 
-We're going to take you through a demo of IBM Edge Application Manager. 
+We're going to take you through a demonstration of IBM Edge Application Manager capabilities. 
 
-IEAM provides a highly secure and robust application life-cycle management for literally thousands of edge machines regardless of their hardware and software differences. Our fully autonomous Agents transparently work through firewalls, and allows for continuous operation even when the local network is disrupted, making application deployment both time and cost efficient.
+IEAM provides a highly secure and robust application life-cycle management for literally thousands of edge machines regardless of their hardware and software differences. Our fully autonomous Agents transparently work through firewalls, and allow for continuous operation even when the local network is disrupted, making application deployment both time and cost efficient.
 
 
 Let's take a look at how our **policy deployment** feature autonomously controls workload installation and update for devices with differing capabilities in a retail environment. 
 
-We're going to use ACME Grocery -- a fictional nationwide grocery chain. Each store has a variety of cameras arrayed in various positions throughout their stores, and they want to use them to monitor for security issues as well as for potential inventory outages.  
+We're going to use ACME Grocery -- a fictional nationwide grocery chain. Each store has a variety of cameras located in various positions throughout their stores, and they want to use them to monitor for security issues as well as for potential inventory outages.  
 
 See diagram below:
 
@@ -42,13 +42,13 @@ Let's take a look at the IBM Edge Application Manager (**IEAM**) dashboard for A
 	[IEAM Management Hub](https://icp-console.ieam41-w3-8e873dd4c685acf6fd2f13f4cdfb05bb-0000.us-south.containers.appdomain.cloud/edge)
 
 ## 2. IEAM Management Hub
-The **dashboard** resides in the your **Management Hub** which can be placed wherever appropriate (for example, in a public cloud, or a regional data center, or even inside a factory, completely air-gapped from the Internet).
+The **dashboard** resides in the **Management Hub** which can be placed wherever is appropriate (for example, in a public cloud, or a regional data center, or even inside a factory, completely air-gapped from the Internet).
 
-The **dashboard** enables you to see and interact with all of your edge assets in one place, regardless of their physical locations or current connection status. These edge machines may be geographically distributed or concentrated in one location. The **Agents** on these edge machines are fully autonomous, are able to reach out to the Management Hub through firewalls when needed. They also tolerate unreliable and intermittent connectivity to the Management Hub.
+The **dashboard** enables you to see and interact with all of your edge assets in one place, regardless of their physical locations or current connection status. These edge machines may be geographically distributed or concentrated in one location. The **Agents** on these edge machines are fully autonomous, they are able to reach out to the Management Hub through firewalls when needed. They also tolerate unreliable and intermittent connectivity to the Management Hub.
 
 ![IEAM Hub](docs/s-IEAM.png)
 
-Notice the dashboard has 4 tabs: **Nodes**, **Services**, **Patterns** and **Policies**. 
+Notice the dashboard has four tabs: **Nodes**, **Services**, **Patterns** and **Policies**. 
 
 Let's take a look at the **Nodes** tab first:
 
@@ -56,18 +56,17 @@ Let's take a look at the **Nodes** tab first:
 
 	[IEAM Management Hub](https://icp-console.ieam41-w3-8e873dd4c685acf6fd2f13f4cdfb05bb-0000.us-south.containers.appdomain.cloud/edge)
 	
-The **Nodes** represent your edge machines -- either edge devices, like an intelligent camera, or edge clusters, like a computer appliance, or a 1/2 rack of compute blades.
+The **Nodes** represent your edge machines -- either edge devices, like an intelligent camera, or edge clusters, like a computer appliance, or a rack of computer blades.
 
 Here you can view and interact with your nodes. It will show all of your registered devices, their assigned software and their last reported status.
 
-
-What you are looking at now is **graphical**  node summary. You can also view your edge nodes as a **list**.
+Notice that what you are looking at is the **graphical**  node summary. You can also view your edge nodes as a **list**.
 
 * Go to the `List` view:
 
 	[IEAM Management Hub](https://icp-console.ieam41-w3-8e873dd4c685acf6fd2f13f4cdfb05bb-0000.us-south.containers.appdomain.cloud/edge)
 
-The **list** view shows additional details that are not visible in a graph layout, like **node owner** and last **heartbeat**. If you select an individual node in the list view you can see even more details.
+The **list** view shows additional details that are not visible in a graphical layout, like **node owner** and last **heartbeat**. If you select an individual node in the list view you can see even more details about the node.
 
 Let's start by finding our cameras.  We have two of them currently registered with this system, but typically you would expect to see hundreds of them deployed across all of ACME's different stores. 
 
@@ -410,4 +409,4 @@ Whenever any of these policies are set or changed, **IEAM** will automatically e
 
 At this point, we can drill in deeper, we can arrange to get you **hands-on access** to the product, or discuss use cases and how to apply them to solving your business problems. 
 
-**Where would you like to go next with this?**
+**Where would you like to go next with this?** 

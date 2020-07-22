@@ -16,9 +16,9 @@ alt="IBM Edge Computing demo" width="240" height="180" border="10" /></a>
 
 Hello, I am ____`<your-name>`____ wtih the **IBM Edge Application Manager** (IEAM) team.
 
-We're going to take you through a demo of IBM Edge Application Manager. 
+We're going to take you through a demonstration of IBM Edge Application Manager capabilities. 
 
-IEAM provides a highly secure and robust application life-cycle management for literally thousands of edge machines regardless of their hardware and software differences. Our fully autonomous Agents transparently work through firewalls, and allows for continuous operation even when the local network is disrupted, making application deployment both time and cost efficient.
+**IEAM** provides a highly secure and robust application life-cycle management for literally thousands of edge machines regardless of their hardware and software differences. Our fully autonomous Agents transparently work through firewalls, and allows for continuous operation even when the local network is disrupted, making application deployment both time and cost efficient.
 
 
 Let's take a look at how our **policy deployment** feature autonomously controls workload installation and update for devices with differing capabilities in a retail environment. 
@@ -29,17 +29,17 @@ See diagram below:
 
 ![ACME Demo](acme.png)
 
-We're going to demonstrate this scenario using a live IEAM management hub.
+We're going to demonstrate this scenario using a live **IEAM**  management hub.
 
 Let's take a look at the IBM Edge Application Manager (**IEAM**) dashboard for ACME's cameras:
 
 * Go to the IEAM dashboard mock-up
 
-	[Management Hub](http://icp.com/edge)
+	[IEAM Welcome Page](https://icp-console.ieam41-w3-8e873dd4c685acf6fd2f13f4cdfb05bb-0000.us-south.containers.appdomain.cloud/edge/start)
 	
 
 ## 2. IEAM Management Hub
-The **dashboard** resides in the your **Management Hub** which can be placed wherever appropriate (for example, in a public cloud, or a regional data center, or even inside a factory, completely air-gapped from the Internet).
+The **dashboard** resides in the your **Management Hub** which can be placed wherever is appropriate (for example, in a public cloud, or a regional data center, or even inside a factory, completely air-gapped from the Internet).
 
 The **dashboard** enables you to see and interact with all of your edge assets in one place, regardless of their physical locations or current connection status. These edge machines may be geographically distributed or concentrated in one location. The **Agents** on these edge machines are fully autonomous, are able to reach out to the Management Hub through firewalls when needed. They also tolerate unreliable and intermittent connectivity to the Management Hub.
 
@@ -49,7 +49,7 @@ Notice the dashboard has 4 tabs: **Nodes**, **Services**, **Patterns** and **Pol
 
 * Go to the `Nodes` tab
 
-	[Management Hub](http://icp.com/edge)
+	[IEAM Welcome Page](https://icp-console.ieam41-w3-8e873dd4c685acf6fd2f13f4cdfb05bb-0000.us-south.containers.appdomain.cloud/edge/start)
 	
 The **Nodes** represent your edge machines. Here you can view and interact with your nodes. It will show all of you registered devices, their assigned software and their last reported status.
 
@@ -61,7 +61,7 @@ You can also view your edge nodes as a **list**.
 
 * Go to the `List` view:
 
-	[Management Hub](http://icp.com/edge)
+	[IEAM Welcome Page](https://icp-console.ieam41-w3-8e873dd4c685acf6fd2f13f4cdfb05bb-0000.us-south.containers.appdomain.cloud/edge/start)
 
 The **list** view shows additional details that are not visible in a graph layout, like **node owner** and last **heartbeat**. If you select an individual node in the list view you can see even more details.
 
@@ -88,7 +88,7 @@ Next, let's explore **CAM-A** settings:
 
 * Go to the **CAM-A** node
 
-	[Management Hub](http://icp.com/edge)
+	[IEAM Welcome Page](https://icp-console.ieam41-w3-8e873dd4c685acf6fd2f13f4cdfb05bb-0000.us-south.containers.appdomain.cloud/edge/start)
 
 Notice **CAM-A's** current configuration of **properties** and **constraints**. 
 These **properties** and **constraints** comprise this node's **policy**, and enable this node to identify its capabilities and highlight its differences. When combined with other policies, it will also inform the type of workloads it will run.
@@ -125,7 +125,7 @@ Now let's examine **CAM-B**
 
 * Go to the **CAM-B** node
 
-	[Management Hub](http://icp.com/edge)
+	[IEAM Welcome Page](https://icp-console.ieam41-w3-8e873dd4c685acf6fd2f13f4cdfb05bb-0000.us-south.containers.appdomain.cloud/edge/start)
 	
 Review (or update) **CAM-B** properties as:
 
@@ -158,7 +158,7 @@ Now let's learn about edge **services**:
 
 * Go to the `Services` tab `(via Node or Home links)`
 
-	[Management Hub](http://icp.com/edge)
+	[IEAM Welcome Page](https://icp-console.ieam41-w3-8e873dd4c685acf6fd2f13f4cdfb05bb-0000.us-south.containers.appdomain.cloud/edge/start)
 	
 An edge **service** can contain one or more **Docker** container images. A group of  one or more services together can create an application.
 
